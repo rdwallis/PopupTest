@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <ui:style>
+    .close, .label {
+    	font-size: 2em;
+    	margin: 10px;
+    }
+    
+    .label {
+    	color: green;
+    }
+    </ui:style>
+    <g:PopupPanel>
+        <g:HTMLPanel>
+            <g:Label addStyleNames="{style.label}">I'm a centered popup!</g:Label>
+            <g:Button ui:field="closeButton" addStyleNames="{style.close}">Close Me</g:Button>
+        </g:HTMLPanel>
+    </g:PopupPanel>
+</ui:UiBinder>
